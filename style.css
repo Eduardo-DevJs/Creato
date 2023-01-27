@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  background: #e3f0ff;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  padding: 30px 20px;
+  margin: 0 auto;
+}
+
+.logo{
+  font-size: 1.3rem;
+  color: #7e32f0;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1rem;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-menu a {
+  color: #7e32f0;
+  text-transform: uppercase;
+}
+
+#comecar{
+  color: #fff;
+  font-weight: bolder;
+}
+
+.header-menu li:last-child{
+  background: #caf;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.introducao{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 1500px;
+  padding: 40px 20px;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.introducao h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.introducao h1 span {
+  color: #e14;
+}
+
+.introducao p {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: #595163;
+  margin: 25px 0;
+}
+
+.introducao img {
+  max-width: 100%;
+  display: block;
+}
+
+.introducao-form {
+  display: flex;
+}
+
+.introducao-form input{
+  padding: 12px;
+  width: 25rem;
+  outline: none;
+  border: none;
+  font-size: 1.3rem;
+  color: #595163;
+}
+
+.introducao-form button {
+  width: 6rem;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: #7e32f0;
+}
+
+.social {
+  margin-top: 30px;
+  display: flex;
+  gap: 60px;
+}
+
+.social a {
+  display: block;
+  padding: 10px 0;
+  color: #595163;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: #7e32f0;
+}
+
+@media (max-width: 768px){
+  .header{
+    display: block;
+    text-align: center;
+  }
+
+  .header-menu {
+    margin-top: 30px;
+    gap: 20px;
+  }
+  
+  .header-menu a {
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+  }
+
+  #comecar{
+    background: transparent;
+  }
+
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+
+  .introducao img {
+    display: none;
+  }
+
+  .introducao h1 {
+    font-size: 2.6rem;
+  }
+
+  .introducao p {
+    font-size: 1rem;
+  }
+
+  .introducao-form input{
+    padding: 12px;
+    width: 80%;
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    color: #595163;
+  }
+  
+  .introducao-form button {
+    width: 8rem;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: #7e32f0;
+  }
+
+  .social{
+    justify-content: center;
+  }
+}
